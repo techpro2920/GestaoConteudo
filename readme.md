@@ -1,4 +1,4 @@
-#Sistema para Gestão de Postagem
+# Sistema para Gestão de Postagem
 
 O porjeto tem por finalidade fazer a gestão de um sistema de postagem com Assunto, descrição e comentarios, foi desenvolvido utilizado a padrão de Projeto MVC (Model-View-Controller).
 
