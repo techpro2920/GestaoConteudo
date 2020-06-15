@@ -1,0 +1,14 @@
+<section>
+    <h1>Postagens:</h1>
+
+    {% for post in Postagens %}
+        <article>
+            <header>
+                <h2><a href="http://localhost:8080/?pagina=post&id={{post.cod_postagem}}">{{post.des_titulo}}</a></h2>
+            </header>
+            <p>{{post.des_conteudo}}</p>
+        </article>
+    {% endfor %}
+    
+    
+</section>

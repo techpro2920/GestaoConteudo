@@ -1,0 +1,27 @@
+<h1>Gerenciado de Conteudo</h1>
+
+<a href="http://localhost:8080/?pagina=admin&metodo=create">Criar Pulicação</a>
+<br>
+<br>
+<hr>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>TITULO</th>
+            <th>ALTERAR</th>
+            <th>DELETAR</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for postagem in postagens %}
+        <tr>
+            <td>{{postagem.cod_postagem}}</td>
+            <td>{{postagem.des_titulo}}</td>
+            <td><a href="http://localhost:8080/?pagina=admin&metodo=change&id={{postagem.cod_postagem}}">ALTERAR</a></td>
+            <td><a href="http://localhost:8080/?pagina=admin&metodo=delete&id={{postagem.cod_postagem}}">DELETAR</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
