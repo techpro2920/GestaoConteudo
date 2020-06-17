@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagem</title>
+    <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!--
         <style type="text/css">
             *{
                 margin: 0;
@@ -75,9 +78,39 @@
                     padding: 4px;
                 }
 
-        </style>
-    </head>
-    <body>
+        </style>-->
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="http://localhost:8080">GPost</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="http://localhost:8080">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8080/?pagina=admin&metodo=index">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8080/?pagina=sobre">Sobre</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <div id="conteudo">
+            {{area_dinamica}}
+        </div>
+
+    </div>
+    <!--
         <div id="corpo">
             <div id="topo">
                 <header>
@@ -92,6 +125,10 @@
             <div id="conteudo">
                 {{area_dinamica}}
             </div>
-        </div>
-    </body>
+        </div>-->
+</body>
+<script src="vendor/components/jquery/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+<script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </html>
