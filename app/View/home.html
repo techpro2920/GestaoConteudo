@@ -1,26 +1,13 @@
-{% for post in Postagens %}
-<div class="card w-33" style="width:18rem">
-    <div class="card-body">
-        <h5 class="card-title">{{post.des_titulo}}</h5>
-        <p class="card-text">{{post.des_conteudo}}</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-    </div>
-</div>
-{% endfor %}
-<!--
-<section>
-    <h1>Postagens:</h1>
-
+<div class="row">
     {% for post in Postagens %}
-        <article>
-            <header>
-                <h2><a href="http://localhost:8080/?pagina=post&id={{post.cod_postagem}}">{{post.des_titulo}}</a></h2>
-            </header>
-            <p>{{post.des_conteudo}}</p>
-        </article>
+        <div class="col-sm-4 mt-3 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{post.des_titulo}}</h5>
+                    <p class="card-text">{{post.des_conteudo}}</p>
+                    <a href="http://localhost:8080/?pagina=post&id={{post.cod_postagem}}" class="card-link">Acessar</a>
+                </div>
+            </div>
+        </div>
     {% endfor %}
-    
-    
-</section>
--->
+</div>

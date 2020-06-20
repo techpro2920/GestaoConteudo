@@ -1,7 +1,7 @@
 {
     "require":{
         "twig/twig": "^3.0",
-        "twbs/bootstrap": "4.0.0",
+        "twbs/bootstrap": "4.4.0",
         "components/jquery": "^3.5"
     }
 }

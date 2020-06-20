@@ -1,4 +1,18 @@
 <h1>Editar Publicação</h1>
+<hr>
+<form method="POST" action="?pagina=admin&metodo=update">
+    <div class="form-group">
+        <label for="titulo">Título</label>
+        <input type="text" class="form-control" id="titulo" placeholder="Informe um Título" value="{{titulo}}" name="titulo">
+    </div>
+    <div class="form-group">
+        <label for="DescricaoPost">Conteúdo</label>
+        <textarea class="form-control" id="DescricaoPost" rows="5" name="conteudo">{{conteudo}}</textarea>
+    </div>
+    <input type="hidden" name="cod_postagem" value="{{id}}">
+    <button type="submit" class="btn btn-primary">Alterar</button>
+</form>
+<!--
 <form method="POST" action="?pagina=admin&metodo=update">
     <span>Titulo</span><br/>
     <input type="text" name="titulo" value="{{titulo}}">
@@ -13,3 +27,4 @@
 
     <input type="submit" value="Alterar">
 </form>
+-->
